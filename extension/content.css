@@ -1,0 +1,27 @@
+/* Le bouton grab, en surimpression au-dessus des lecteurs vidéo de la page. */
+.grab-btn {
+	position: absolute;
+	z-index: 2147483647;
+	height: 24px;
+	padding: 3px 10px;
+	border: 1px solid rgba(255, 255, 255, 0.22);
+	border-radius: 12px;
+	background: linear-gradient(#232a35, #14181f);
+	color: #ffffff;
+	font: 600 12px/16px system-ui, -apple-system, sans-serif;
+	letter-spacing: 0.2px;
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.35);
+	cursor: pointer;
+	opacity: 0.93;
+}
+
+.grab-btn:hover {
+	opacity: 1;
+	border-color: rgba(255, 255, 255, 0.45);
+}
+
+.grab-btn:disabled {
+	cursor: not-allowed;
+	color: #9aa3ad;
+	opacity: 0.7;
+}

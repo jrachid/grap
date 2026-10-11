@@ -1,0 +1,27 @@
+# le binaire compilé, jamais versionné
+/grab
+*.exe
+
+# état local de grab (file, morceaux, jeton du récepteur)
+.grab/
+*.grabpart
+*.grab-meta.json
+
+# brouillons de test locaux (fichiers les sandboxes du serveur de test)
+hm/
+h1*/
+h2*/
+h3*/
+out1*/
+out2*/
+out3*/
+serve.log
+*.log
+
+# macOS
+.DS_Store
+
+# éditeur et divers
+.vscode/
+.idea/
+*.swp

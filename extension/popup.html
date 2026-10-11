@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<style>
+		body { font: 13px/1.45 system-ui, -apple-system, sans-serif; min-width: 260px; padding: 12px; color: #1c2430; }
+		h1 { font-size: 14px; margin: 0 0 8px; }
+		label { display: block; font-weight: 600; margin-bottom: 4px; }
+		input { width: 100%; box-sizing: border-box; padding: 6px 8px; border: 1px solid #b9c2cc; border-radius: 6px; }
+		.row { margin-top: 10px; display: flex; gap: 6px; }
+		button { flex: 1; padding: 7px 8px; border: 0; border-radius: 6px; background: #24487a; color: #fff; cursor: pointer; }
+		#test { background: #3a4c66; }
+		.status { margin-top: 10px; font-size: 11.5px; color: #5a6472; min-height: 32px; }
+		code { background: #eef1f5; padding: 0 3px; border-radius: 3px; }
+	</style>
+</head>
+<body>
+	<h1>grab</h1>
+	<label>Jeton de <code>grab serve</code></label>
+	<input id="token" placeholder="colle le jeton affiché par grab serve" autocomplete="off" spellcheck="false">
+	<div class="row">
+		<button id="save">Enregistrer</button>
+		<button id="test">Tester</button>
+	</div>
+	<div class="status" id="status"></div>
+	<script src="popup.js"></script>
+</body>
+</html>

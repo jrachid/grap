@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "grab",
+  "version": "0.1.0",
+  "description": "Bouton de téléchargement au-dessus des vidéos et des liens de fichier, envoi à grab en local.",
+  "permissions": ["contextMenus", "storage"],
+  "host_permissions": ["http://127.0.0.1/*", "http://localhost/*"],
+  "background": { "service_worker": "background.js" },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle",
+      "all_frames": true
+    }
+  ],
+  "action": { "default_popup": "popup.html", "default_title": "grab — téléchargeur en morceaux" }
+}
